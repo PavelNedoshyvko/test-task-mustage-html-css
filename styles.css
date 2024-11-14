@@ -1,0 +1,17 @@
+:root {
+  --primary-bg-color: #000000;
+  --secondary-bg-color: #ffffff;
+  --logo-color: #ffffff;
+  --card-bg-color: #ffffff;
+  --delimiter-color: #ffffff;
+  --card-marker-color: #6823ff;
+  --txt-color: #ffffff;
+  --mobile-menu-icon-color: #ffffff;
+  --btn-bg-color: #ffffff;
+  --btn-txt-color: #000000;
+  --advantages-block-bg-color: rgba(255, 255, 255, 0.1);
+}
+
+body {
+  background-color: #000;
+}
