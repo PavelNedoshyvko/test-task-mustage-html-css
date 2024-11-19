@@ -4,22 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mustage</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
-        <nav>
+        <nav class="nav">
           <a href="../index.html" class="logo">Mustage</a>
-          <button
-            class="burger-menu-btn js-open-menu"
-            type="button"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-          >
-            <svg class="burger-menu-icon" width="53" height="35">
-              <use href="./img/icons.svg#icon-burger"></use>
-            </svg>
-          </button>
+
           <ul class="nav__list">
             <li>
               <a class="nav__link" href="./index.html">Програма</a>
@@ -39,24 +31,42 @@
           </ul>
         </nav>
         <div class="language-switcher">
-          <a class="language-option" href="#">RU</a> /
-          <a class="language-option" href="#">UA</a>
+          <a class="language-option" href="#"><span>RU</span> /</a>
+          <a class="language-option" href="#"><span>UA</span> &#8196;</a>
         </div>
         <button class="write-us-btn" type="button">Написати нам</button>
+        <button class="successful-start-btn" type="button">
+          Твій успішний старт
+        </button>
+        <button
+          class="burger-menu-btn js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="burger-menu-icon" width="51" height="37">
+            <use href="./img/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
     <main>
       <section class="hero">
         <div class="container">
+          <span class="frame"></span>
+          <span class="mask-left"></span>
+          <span class="mask-centr"></span>
+          <span class="mask-right"></span>
           <h1 class="hero__title">
-            Навчись знаходити прибуткові звʼязки та лити на гемблу всього за 21
-            день
+            Навчись знаходити прибуткові звʼязки <br />та лити на гемблу всього
+            за 21 день
           </h1>
           <p class="hero__txt">
-            Даємо можливість опанувати арбітраж трафіку БЕЗКОШТОВНО, заощадити
-            на розхідниках більше 250 доларів та потрапити в нашу команду
-            Mustage Friends
+            Даємо можливість опанувати арбітраж трафіку
+            <span class="hero__txt--uppercase">безкоштовно</span>, заощадити на
+            розхідниках більше 250 доларів та потрапити в нашу команду Mustage
+            Friends
           </p>
           <button class="successful-start-btn" type="button">
             Твій успішний старт
@@ -82,19 +92,21 @@
       </section>
 
       <section class="dont-delay">
-        <div class="container">
-          <div>
+        <div class="dont-delay__title-wrap">
+          <div class="container">
             <h2 class="dont-delay__title">
               Не зволікай, на тебе чекає багато «плюшок»
             </h2>
           </div>
-          <div>
+        </div>
+        <div class="dont-delay__list-wrap">
+          <div class="container">
             <ul class="dont-delay__list">
               <li class="dont-delay__item">
                 <h3 class="dont-delay__item-title">
                   Продумана система навчання з практичним досвідом
                 </h3>
-                <p>
+                <p class="dont-delay__item-txt">
                   Навчимо усьому, що потрібно для успішного старту в арбітражі.
                   Пройдучи весь шлях з нуля з нами, ти зможеш підбирати вдалі
                   офери, складати Т3 для конвертуючих креативів, користуватися
@@ -103,9 +115,10 @@
               </li>
               <li class="dont-delay__item">
                 <h3 class="dont-delay__item-title">
-                  Доступи до каналу і чату свого потоку
+                  Доступи до каналу <br />
+                  і чату свого потоку
                 </h3>
-                <p>
+                <p class="dont-delay__item-txt">
                   Будеш проходити курс зоднодумцями: нетворкати, обмінюватися
                   досвідом, швидко вирішувати проблеми. Так зможеш уникнути
                   помилок, а також успішно ішвидко стартанути варбітражі.
@@ -115,7 +128,7 @@
                 <h3 class="dont-delay__item-title">
                   Зручний конект через Telegram
                 </h3>
-                <p>
+                <p class="dont-delay__item-txt">
                   Всі навчальні матеріали публікуватимемо на каналі потоку.
                   Домашки і тести будеш здавати через бота, в якому все зручно
                   структуровано. По ним - детальний зворотній звʼязок від
@@ -126,9 +139,9 @@
                 <h3 class="dont-delay__item-title">
                   2 зідзвони з крутими наставниками в Zoom
                 </h3>
-                <p>
+                <p class="dont-delay__item-txt">
                   Зможеш поспілкуватися зТОПовими баєрами нашої команди і
-                  поставити мї будь-які питання про тонкощі заливу реклами на
+                  поставити будь-які питання про тонкощі заливу реклами на
                   гемблу. Це мега можливість як для новачків, так ідля діючих
                   арбітражників.
                 </p>
@@ -137,7 +150,7 @@
                 <h3 class="dont-delay__item-title">
                   Оперативний та чуйний сапорт
                 </h3>
-                <p>
+                <p class="dont-delay__item-txt">
                   Щось не так здомашкою, не виходить прив'язати карти до
                   акаунтів, додати проксі в антидетект браузер - ці та інші
                   питання допоможуть розрулити наші експерти-куратори. Просто
@@ -148,7 +161,7 @@
                 <h3 class="dont-delay__item-title">
                   Можливість потрапити в команду для кожного
                 </h3>
-                <p>
+                <p class="dont-delay__item-txt">
                   Наполегливо навчаєшся - проявляєш активність у чаті - ідеш
                   далі, незважаючи на невдачі - прагнеш до розвитку у вертикалі
                   гемблінгу. При такому розкладі після курсу ми запросимо тебе у
@@ -157,10 +170,10 @@
                 </p>
               </li>
             </ul>
-            <button class="successful-start-btn" type="button">
-              Твій успішний старт
-            </button>
           </div>
+          <button class="successful-start-btn" type="button">
+            Твій успішний старт
+          </button>
         </div>
       </section>
     </main>
@@ -168,7 +181,7 @@
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-close-btn js-close-menu" type="button">
         <svg class="x-close-icon" width="24" height="24">
-          <use href="./img/icons.svg#icon-x-close"></use>
+          <use href="./img/icons.svg#icon-cross1"></use>
         </svg>
       </button>
       <div class="menu-wrap">
@@ -194,10 +207,18 @@
           </ul>
         </nav>
         <div class="language-switcher">
-          <a class="language-option" href="#">RU</a> /
-          <a class="language-option" href="#">UA</a>
+          <a class="language-option" href="#"><span>RU</span> /</a>
+          <a class="language-option" href="#"><span>UA</span> &#8196;</a>
         </div>
       </div>
     </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./mobile-menu.js"></script>
   </body>
 </html>
