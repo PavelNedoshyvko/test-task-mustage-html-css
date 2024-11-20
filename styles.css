@@ -179,13 +179,6 @@ body {
   padding: 0 20px;
 }
 
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding: 0 40px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
@@ -334,10 +327,10 @@ body {
 
 .hero__title {
   position: relative;
-  width: 400px;
+  width: 370px;
+  margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 30px;
 
   font-family: "Jura", sans-serif;
   font-weight: 700;
@@ -347,6 +340,8 @@ body {
 .hero__txt {
   position: relative;
   margin-bottom: 45px;
+  margin-left: auto;
+  margin-right: auto;
 
   line-height: 1.28;
 }
@@ -364,6 +359,10 @@ body {
   font-size: 24px;
 }
 
+.dont-delay .successful-start-btn {
+  margin-bottom: 0;
+}
+
 .advantages {
   position: relative;
   width: 318px;
@@ -378,7 +377,7 @@ body {
 }
 
 .advantages__item:not(:last-child) {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .advantages__item:not(:last-child)::after {
@@ -407,9 +406,6 @@ body {
   padding-bottom: 100px;
 
   background-color: var(--secondary-bg-color);
-
-  font-weight: 700;
-  font-size: 32px;
 }
 
 .dont-delay__title-wrap::before {
@@ -439,6 +435,8 @@ body {
 }
 
 .dont-delay__title {
+  position: relative;
+
   font-family: "Jura", sans-serif;
   font-weight: 700;
   font-size: 32px;
@@ -447,7 +445,7 @@ body {
 
 .dont-delay__list-wrap {
   padding-top: 100px;
-  padding-bottom: 74px;
+  padding-bottom: 89px;
   background-color: var(--primary-bg-color);
 }
 
@@ -457,7 +455,7 @@ body {
   gap: 30px;
   width: 100%;
   max-width: 440px;
-  margin-bottom: 50px;
+  margin-bottom: 65px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -551,3 +549,152 @@ body {
 }
 
 /* 768 px */
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 40px;
+  }
+
+  .header .container {
+    justify-content: flex-start;
+    gap: 1px;
+  }
+
+  .header .logo {
+    font-size: 32px;
+    margin-right: 223px;
+  }
+
+  .header .write-us-btn {
+    display: block;
+    position: relative;
+    padding: 15px 30px;
+    border-radius: 100px;
+    margin-right: 71px;
+
+    background-color: var(--btn-bg-color);
+
+    font-family: "Jura", sans-serif;
+    font-weight: 700;
+    color: var(--btn-txt-color);
+    transition: transform var(--transition-time);
+
+    z-index: 1;
+  }
+
+  .write-us-btn:hover,
+  .write-us-btn:focus {
+    transform: rotateZ(5deg);
+  }
+
+  .header .successful-start-btn {
+    display: none;
+  }
+
+  .hero {
+    padding-bottom: 75px;
+  }
+
+  .frame::before {
+    top: 180px;
+
+    max-width: 453px;
+    height: 799px;
+
+    background-image: url("./img/frame-768.svg");
+    background-repeat: no-repeat;
+
+    -webkit-mask-image: url("./img/gr-up-left-768.svg");
+    -webkit-mask-repeat: no-repeat;
+    mask-image: url("./img/gr-up-left-768.svg");
+    mask-repeat: no-repeat;
+  }
+
+  .frame::after {
+    max-width: 485px;
+    height: 883px;
+
+    background-image: url("./img/frame-768.svg");
+    background-repeat: no-repeat;
+
+    -webkit-mask-image: url("./img/gr-up-right-768.svg");
+    -webkit-mask-repeat: no-repeat;
+    mask-image: url("./img/gr-up-right-768.svg");
+    mask-repeat: no-repeat;
+  }
+
+  .hero__title {
+    width: 690px;
+
+    font-size: 45px;
+  }
+
+  .hero__txt {
+    width: 575px;
+  }
+
+  .advantages {
+    width: 688px;
+    height: 148px;
+    padding: 30px 20px;
+  }
+
+  .dont-delay__list-wrap {
+    padding-bottom: 165px;
+  }
+
+  .advantages__list {
+    display: flex;
+    text-align: start;
+  }
+
+  .advantages__item {
+    position: relative;
+  }
+
+  .advantages__item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 40px;
+  }
+
+  .advantages__item:not(:last-child)::after {
+    position: absolute;
+    width: 1px;
+    height: 101px;
+    bottom: 0px;
+    right: -20px;
+  }
+
+  .dont-delay__title-wrap::before {
+    width: 518px;
+    height: 289px;
+
+    background-image: url("./img/gr-dwn-left-768.svg");
+  }
+
+  .dont-delay__title-wrap::after {
+    width: 570px;
+    height: 289px;
+
+    background-image: url("./img/gr-dwn-right-768.svg");
+  }
+
+  .dont-delay__title {
+    font-size: 40px;
+  }
+
+  .dont-delay__list {
+    gap: 50px;
+    margin-bottom: 65px;
+    min-width: 590px;
+  }
+
+  .dont-delay__item-title {
+    font-size: 30px;
+  }
+
+  .dont-delay__item-txt {
+    font-size: 22px;
+  }
+}
